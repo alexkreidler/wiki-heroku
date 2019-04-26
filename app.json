@@ -1,6 +1,6 @@
 {
   "name": "Wiki.js",
-  "description": "An open source, modern and powerful wiki app built on Node.js, Git and Markdown.\n Version 3",
+  "description": "An open source, modern and powerful wiki app built on Node.js, Git and Markdown.\n Version 4",
   "repository": "https://github.com/requarks/wiki-heroku",
   "logo": "https://raw.githubusercontent.com/Requarks/wiki-v1/master/assets/images/logo.png",
   "keywords": ["node", "wiki", "heroku"],
@@ -58,8 +58,13 @@
       "required": false
     },
     "WIKI_GIT_PRIVKEY": {
-      "description": "Password / PAT / Deploy Key to access the remote git repository (only use for 'ssh' authentication)",
+      "description": "Private SSH key / Deploy Key to access the remote git repository (only use for 'ssh' authentication)",
       "value": "-----BEGIN OPENSSH PRIVATE KEY----- ...",
+      "required": false
+    },
+    "WIKI_GIT_PRIVKEY_LOCATION": {
+      "description": "Filesystem location for private key (in heroku don't use root (only use for 'ssh' authentication)",
+      "value": "/app/privkey.pem",
       "required": false
     },
     "WIKI_SERVER_EMAIL": {
