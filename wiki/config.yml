@@ -1,3 +1,5 @@
+--- # ---------------------------------------------------------------------
+
 #######################################################################
 # Wiki.js - CONFIGURATION                                             #
 #######################################################################
@@ -6,8 +8,6 @@
 
 # ---------------------------------------------------------------------
 # Title of this site
-# ---------------------------------------------------------------------
-
 title: $(WIKI_TITLE)
 
 # ---------------------------------------------------------------------
@@ -89,8 +89,8 @@ auth:
     enabled: false
     clientID: APP_ID
     clientSecret: APP_SECRET_KEY
-    resource: '00000002-0000-0000-c000-000000000000'
-    tenant: 'YOUR_TENANT.onmicrosoft.com'
+    resource: "00000002-0000-0000-c000-000000000000"
+    tenant: "YOUR_TENANT.onmicrosoft.com"
 
 # ---------------------------------------------------------------------
 # Secret key to use when encrypting sessions
@@ -113,9 +113,8 @@ git:
   url: $(WIKI_GIT_URL)
   branch: $(WIKI_GIT_BRANCH)
   auth:
-
     # Type: basic or ssh
-    type: basic
+    type: $(WIKI_GIT_AUTH_TYPE)
 
     # Only for Basic authentication:
     username: $(WIKI_GIT_USERNAME)

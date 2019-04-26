@@ -1,4 +1,6 @@
-# Heroku Deploy for Wiki.js
+# blair3sat Heroku Deploy for Wiki.js
+
+From https://github.com/Requarks/wiki-heroku
 
 This repo is an Heroku app definition for Wiki.js.  
 For information about Wiki.js, including detailed installation steps, read the following links:
@@ -10,7 +12,8 @@ For information about Wiki.js, including detailed installation steps, read the f
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/requarks/wiki-heroku)
 
 If you want to modify the configuration beyond what's available through environment variables, then:
-* Clone this repo
-* Make and commit your configuration changes
-* `git remote add heroku https://git.heroku.com/my-wiki.git`
-* `git push heroku`, or if you are on a branch, `git push heroku mybranch:master`
+
+- Clone this repo
+- Make and commit your configuration changes
+- `git remote add heroku https://git.heroku.com/my-wiki.git`
+- `git push heroku`, or if you are on a branch, `git push heroku mybranch:master`
