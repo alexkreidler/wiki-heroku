@@ -45,23 +45,22 @@
     },
     "WIKI_GIT_AUTH_TYPE": {
       "description": "Type of authentication for the git sync repository. Currently, only 'basic' and 'ssh' are supported.",
-      "value": "ssh",
-      "required": "true"
+      "value": "ssh"
     },
     "WIKI_GIT_USERNAME": {
       "description": "Username to access the remote git repository (only use for 'basic' authentication)",
       "value": "marty",
-      "required": "false"
+      "required": false
     },
     "WIKI_GIT_PASSWORD": {
       "description": "Password / PAT / Deploy Key to access the remote git repository (only use for 'basic' authentication)",
       "value": "MartyMcFly88",
-      "required": "false"
+      "required": false
     },
     "WIKI_GIT_PRIVKEY": {
       "description": "Password / PAT / Deploy Key to access the remote git repository (only use for 'ssh' authentication)",
       "value": "-----BEGIN OPENSSH PRIVATE KEY----- ...",
-      "required": "false"
+      "required": false
     },
     "WIKI_SERVER_EMAIL": {
       "description": "Default email to use as commit author",
