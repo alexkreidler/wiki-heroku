@@ -13,7 +13,7 @@ echo "-> Fetching dependencies..."
 curl -L -s -S https://github.com/Requarks/wiki-v1/releases/download/v$VERSION/node_modules.tar.gz | tar xz -C ./wiki
 
 echo "-> Installing private key"
-mkdir -p  /etc/wiki/keys
+# mkdir -p $(dirname $WIKI_GIT_PRIVKEY_LOCATION)
 echo $WIKI_GIT_PRIVKEY > $WIKI_GIT_PRIVKEY_LOCATION
 
 echo "-> Installation Complete"
