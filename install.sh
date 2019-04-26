@@ -14,6 +14,6 @@ curl -L -s -S https://github.com/Requarks/wiki-v1/releases/download/v$VERSION/no
 
 echo "-> Installing private key"
 mkdir -p  /etc/wiki/keys
-echo $WIKI_GIT_PRIVKEY > /etc/wiki/keys/git.pem
+echo $WIKI_GIT_PRIVKEY > $WIKI_GIT_PRIVKEY_LOCATION
 
 echo "-> Installation Complete"

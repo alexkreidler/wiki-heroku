@@ -121,7 +121,7 @@ git:
     password: $(WIKI_GIT_PASSWORD)
 
     # Only for SSH authentication:
-    privateKey: /etc/wiki/keys/git.pem
+    privateKey: $(WIKI_GIT_PRIVKEY_LOCATION)
 
     sslVerify: true
 
